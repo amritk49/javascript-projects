@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title> MUSIC PLAYER </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="main_div">
+        <div class="music_container">
+
+            <h2 id="title"> ONE PIECE </h2>
+            <h3 id="artist"> WAR THEME </h3>
+
+            <div class="img_container">
+                <img src="img1.jpg" alt="" />
+            </div>
+
+            <audio src="music1.mp3"></audio>
+
+            <!-- progress bar -->
+            <div class="progress_bar_container" id="progress_container">
+                <div class="progress_duration_meter">
+                    <div id="current_time"> 0 : 00 </div>
+                    <div id="duration"> 1 : 50 </div>
+                </div>
+
+                <div class="progress_div" id="progress_div">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+
+            <!---controls-->
+            <div class="music_control">
+                <i class="fas fa-backward" id="prev" title="Previous"></i>
+                <i class="fas fa-play main_button" id="play" title="Play"></i>
+                <i class="fas fa-forward" id="next" title="Next"></i>
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+
+</html>
